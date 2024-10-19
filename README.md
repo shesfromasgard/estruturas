@@ -1,8 +1,8 @@
 ![](https://i.imgur.com/X0YdLQy.png)
 
-<p>Dedicado para a postagem de exercícios da matéria de Estruturas de Dados I no IFSudesteMG - Campus Manhuaçu.</p>
+<p>Dedicado para a postagem de exercícios da matéria de <b>Estruturas de Dados I</b> no IFSudesteMG - Campus Manhuaçu.</p>
 <p>Anyway, you better go follow me on Twitter, it's totally good for your physical and mental health.</p>
-http://x.com/shesfromasgard/
+<b>http://x.com/shesfromasgard/</b>
 
 <p></p>
 
