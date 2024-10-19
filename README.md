@@ -1,4 +1,4 @@
-<h1 style = "color: #9c103a">Bem-vindo ao meu Orkut!</h1>
+![](https://i.imgur.com/X0YdLQy.png)
 
 <p>Dedicado para a postagem de exercícios da matéria de Estruturas de Dados I no IFSudesteMG - Campus Manhuaçu.</p>
 <p>Anyway, you better go follow me on Twitter, it's totally good for your physical and mental health.</p>
