@@ -7,8 +7,11 @@ public class Ex4 {
         int n = 0;
         int n1 = 0;
 
-        n = sc.nextInt();
-        n1 = sc.nextInt();
+        while(n < 0)
+            n = sc.nextInt();
+
+        while(n1 < 0)
+            n1 = sc.nextInt();
 
         System.out.println(recur(n, n1));
 
