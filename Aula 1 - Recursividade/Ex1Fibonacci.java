@@ -4,9 +4,10 @@ public class Ex1Fibonacci {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int num;
+        int num = -1;
 
-        num = sc.nextInt();
+        while(num < 0)
+            num = sc.nextInt();
 
         if(num == 0 || num == 1) 
             System.out.println(num);
