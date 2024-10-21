@@ -19,11 +19,8 @@ public class Ex5 {
     }
 
     public static int recur(int n1, int n2) {
-        if (n1 == 0)
-            return n2;
-        else if (n2 == 0)
+       if (n2 == 0)
             return n1;
-        else
-            return recur(n2, n1 % n2);
+        return recur(n2, n1 % n2);
     }
 }
