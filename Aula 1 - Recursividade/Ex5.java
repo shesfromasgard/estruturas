@@ -22,7 +22,7 @@ public class Ex5 {
        if ((n1 >= n2) && (n1 % n2 == 0))
             return n2;
         else if(n1 < n2)
-            return recur(n2, n1)
+            return recur(n2, n1);
         else
             return recur(n2, n1 % n2);
     }
