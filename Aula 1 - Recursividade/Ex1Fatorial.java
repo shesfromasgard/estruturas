@@ -22,7 +22,7 @@ public class Ex1Fatorial {
         if(num < 1)
             throw new Exception("Digite um número positivo maior que zero.");
 
-        if(num == 1)
+        if(num == 1 || num == 0)
             return 1;
         
         while(cont != 0) {
