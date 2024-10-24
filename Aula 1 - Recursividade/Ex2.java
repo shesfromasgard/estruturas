@@ -6,20 +6,24 @@ public class Ex2 {
 
         int n = -1;
 
-        while(n < 0)
-            n = sc.nextInt();
+        n = sc.nextInt();
 
-        System.out.println(recur(n));
+        try {
+            System.out.println(recur(n));
+        } catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 
         sc.close();
     }
-
-    public static long recur(int n) {
+    public static long recur(int n) throws Exception {
         if(n == 0)
             return 1;
+        else if(n < 0)
+            throw new Exception("Digite um número positivo. Aceitamos o zero!(só nesse");
         else if(n == 1)
             return 2;
-        else 
+        else
             return 2 * recur(n - 1);
     }
 }
