@@ -22,9 +22,9 @@ public class Ex1Fibonacci {
         if(cont < 0)
             throw new Exception("Digite um número positivo.");
 
-        if(cont == 0)
+        if(cont == 0 || cont == 1)
             return 0;
-        else if (cont == 1 || cont == 2)
+        else if (cont == 2 || cont == 3)
             return 1;
         else {
             int vet[] = new int [cont];
