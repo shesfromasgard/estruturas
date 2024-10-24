@@ -4,20 +4,33 @@ public class Ex1Fatorial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = -1;
+        int num = sc.nextInt();
+        
+        try {
+            System.out.println(fatorial(num));
+        }
+        catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        
+        sc.close();
+    }
+    
+    public static int fatorial(int num) throws Exception {
+        int cont = num - 1;
 
-        while(n < 1)
-            n = sc.nextInt();
+        if(num < 1)
+            throw new Exception("Digite um número positivo maior que zero.");
 
-        int cont = n - 1;
-
+        if(num == 1)
+            return 1;
+        
         while(cont != 0) {
-            n *= cont;
+            num *= cont;
             cont--;
         }
 
-        System.out.println(n);
+        return num;
 
-        sc.close();
     }
 }
