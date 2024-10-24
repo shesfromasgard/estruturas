@@ -9,12 +9,22 @@ public class Ex3 {
         while(n < 0)
             n = sc.nextInt();
 
-        System.out.println(recur(n, n - 1));
+        try {
+            System.out.println(recur(n));
+        } catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
 
         sc.close();
     }
 
-    public static boolean recur(int n, int d) {
+    public static boolean recur(int n) throws Exception {
+        return recur(n, n - 1);
+    }
+
+    public static boolean recur(int n, int d) throws Exception {
+        if(n < 0)
+            throw new Exception("Digite um número positivo.");
         if(n == 1)
             return false;
         if (d <= 1)
