@@ -5,22 +5,17 @@ public class Ex1MaiorMenor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int count = 0;
+        int vet[] = {-1, 10, 35, 150, 198, -85, 10, -150, 15250};
 
-        while(count <= 0)
-            count = sc.nextInt();
+        int vetor[] = algoai(vet);
 
-        int vet[] = new int[count];
-
-        for(int i = 0; i < vet.length; i++)
-            vet[i] = sc.nextInt();
-
-        algoai(vet);
+        for(int i = 0; i < vetor.length; i++)
+            System.out.println(vetor[i]);
         
         sc.close();
     }
 
-    public static void algoai(int vet []) {
+    public static int[] algoai(int vet []) {
 
         int maior = vet[0], menor = vet[0];
 
@@ -31,8 +26,9 @@ public class Ex1MaiorMenor {
                 menor = vet[i];
         }
 
-        System.out.println("Maior: " + maior);
-        System.out.println("Menor: " + menor);
+        int vetor[] = {maior, menor};
+
+        return vetor;
 
     }
 }
