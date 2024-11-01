@@ -1,4 +1,4 @@
-public class Ex2 {
+    public class Ex2 {
 
     int vet[] = new int[100];
     int count = 0;
@@ -37,7 +37,7 @@ public class Ex2 {
     }
 
     public int aleatorio() {
-        return (int) (Math.random() * 1500);
+        return (int) (Math.random() * 	2147483647) + -2147483648;
     }
 
     public void insereFim() {
@@ -60,7 +60,7 @@ public class Ex2 {
     }
 
     public void insereMeio() {
-        if (count == 0)
+        if (count == 0 || last == 0)
             insereInicio();
         else {
             for (int i = count; i > last; i--)
