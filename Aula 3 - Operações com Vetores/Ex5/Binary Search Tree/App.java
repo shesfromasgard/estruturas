@@ -1,14 +1,14 @@
 public class App {
     static Node raiz = null;
     public static void inserir (Node no, int valor){
-        if (no!=null){
+        if (no != null){
             if (valor < no.valor){
                 if (no.esquerda != null)
                     inserir(no.esquerda, valor);
                 else
                     no.esquerda = new Node(valor);
-            }else{
-                if (no.direita!=null)
+            } else {
+                if (no.direita != null)
                     inserir(no.direita, valor);
                 else
                     no.direita = new Node(valor);
@@ -17,14 +17,14 @@ public class App {
             raiz = new Node(valor);
         }
     }
-    public static void print(Node no){
+    public static void print (Node no){
         if (no!=null){
             print(no.esquerda);
             System.out.print(no + " ");
             print(no.direita);
         }
     }
-    public static void chama(int vet[]) throws Exception {
+    public static void chama (int vet[]) throws Exception {
         if(vet.length == 0) 
             throw new Exception("Vetor vazio.");
         else
