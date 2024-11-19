@@ -1,0 +1,1 @@
+Uma função recursiva é uma função que chama a si mesma de forma direta ou indireta. Toda função recursiva pode ser convertida em um código iterativo.
