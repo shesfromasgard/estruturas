@@ -1,1 +1,1 @@
-Complexidade O(n) ou linear.
+Complexidade O(n²) ou quadrática.
