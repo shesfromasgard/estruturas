@@ -1,0 +1,19 @@
+1. Implemente uma função recursiva para calcular a soma de todos os elementos de um vetor de números inteiros.
+
+2. Crie uma função recursiva que calcule o fatorial de um número inteiro positivo. Exemplo: 5! = 5 * 4 * 3 * 2 * 1.
+
+3. Implemente uma função recursiva para realizar a busca binária em um vetor de números inteiros ordenados, retornando o índice do número buscado.
+
+4. Crie uma função recursiva para calcular o n-ésimo número de Fibonacci, onde a sequência é: 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+5. Crie uma função recursiva para contar quantos elementos de um vetor estão nas posições ímpares.
+
+6. Dado um vetor de inteiros, analise a complexidade assintótica de uma função que soma todos os seus elementos.
+
+7. Implemente uma função que realize uma busca linear (não recursiva) em um vetor e determine a complexidade assintótica desse algoritmo.
+
+8. Implemente o algoritmo de ordenação por inserção para um vetor e analise sua complexidade assintótica.
+
+9. Implemente funções para inserir e remover elementos de um vetor: início, meio e fim. Depois, calcule a complexidade assintótica de cada operação.
+
+10. Crie uma função para reverter os elementos de um vetor. Implemente versões iterativa e recursiva e analise a complexidade de cada uma.
