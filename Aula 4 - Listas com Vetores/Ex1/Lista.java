@@ -1,5 +1,5 @@
 public class Lista {
-    private int tamanho = 50;
+    private int tamanho = 500;
     private Candidato[] A;
     private int ultimo = 0;
     private int codigo = 0;
@@ -10,7 +10,7 @@ public class Lista {
 
     public void add(String nome, float nota) throws Exception {
         if(isFull())
-            throw new Exception("Vetor cheio.");
+            throw new Exception("Não há mais vagas no concurso, tente no próximo edital.");
         else {
             Candidato elemento = new Candidato(codigo, nome, nota);
 
