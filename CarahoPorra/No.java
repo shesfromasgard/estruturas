@@ -4,9 +4,9 @@ public class No {
     public Cliente elemento;
 
     public No (Cliente elemento, No anterior, No proximo) {
-        proximo = this.proximo;
-        anterior = this.anterior;
-        elemento = this.elemento;
+        this.proximo=proximo;
+        this.anterior=anterior;
+        this.elemento=elemento ;
     }
 
     public No () {

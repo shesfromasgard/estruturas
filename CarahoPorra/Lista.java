@@ -48,16 +48,15 @@ public class Lista {
         tamanho++;
     }
 
-    public void add(int codigo, String nome, String telefone) throws Exception {
+    public void add(int codigo, String nome, long telefone) throws Exception {
         Cliente elemento = new Cliente(codigo, nome, telefone);
-
         if(tamanho == 0) {
             addInicio(elemento);
         } else {
             int pos = posicao(codigo);
             if(pos == 0)
                 addInicio(elemento);
-            else if(pos >= tamanho - 1)
+            else if(pos == tamanho)
                 addFim(elemento);
             else
                 addMeio(elemento, pos);
@@ -66,22 +65,24 @@ public class Lista {
 
     public int posicao(int codigo) {
         No el = controle.anterior;
-        int pos = tamanho - 1;
-
-        while(el.elemento.codigo > codigo) {
+        int pos = tamanho;
+       
+        while(el.elemento.codigo > codigo ) {
             el = el.anterior;
             pos--;
+            if(el==controle){
+                return pos;
+            }
         }
-
         return pos;
     }
 
     public void print() throws Exception {
-        No el = controle.proximo;
-        while (el!=null){
-            System.out.println("Código: " + el.elemento.codigo);
-            System.out.println("Nome: " + el.elemento.nome);
-            System.out.println("Idade: " + el.elemento.telefone);
+        No el = controle;
+        while (el.proximo!=null){ 
+            System.out.println("Código: " + el.proximo.elemento.codigo);
+            System.out.println("Nome: " + el.proximo.elemento.nome);
+            System.out.println("Telefone: " + el.proximo.elemento.telefone);
 
             el = el.proximo;
         }
