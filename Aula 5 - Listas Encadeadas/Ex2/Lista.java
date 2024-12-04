@@ -2,7 +2,7 @@
 
 public class Lista {
     private No controle;
-    int tamanho = 0;
+    private int tamanho = 0;
 
     public Lista() {
         controle = new No(null, null, null);
