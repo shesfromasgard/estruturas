@@ -52,6 +52,8 @@ public class BackEnd {
                 Pilha tmp = controlP1.proximo;
                 controlP1.proximo = controlP1.proximo.proximo;
 
+                p1.pontuacao -= tmp.carta;
+
                 tam1--;
                 return tmp.carta;
             }
@@ -62,10 +64,48 @@ public class BackEnd {
                 Pilha tmp = controlP2.proximo;
                 controlP2.proximo = controlP2.proximo.proximo;
 
+                p2.pontuacao -= tmp.carta;
+
                 tam2--;
                 return tmp.carta;
             }
         }
+    }
+
+    public int[] print(int winner) {
+        if(winner == 1) {
+            int array[] = new int[tam1];
+            int op = 0;
+            Pilha el = controlP1.proximo;
+
+            while(el.proximo != null) {
+                array[op++] = el.carta;
+                el = el.proximo;
+            }
+
+            return array;
+
+        } else {
+            int array[] = new int[tam2];
+            int op = 0;
+            Pilha el = controlP2.proximo;
+
+            while(el.proximo != null) {
+                array[op++] = el.carta;
+                el = el.proximo;
+            }
+
+            return array;
+        }
+    }
+
+    public int winner() {
+        if(getScore(1) > getScore(2))
+            return 1;
+        else if(getScore(2) > getScore(1))
+            return 2;
+        else
+            return 3;
     }
 
     public boolean isEmpty(int tam) {
