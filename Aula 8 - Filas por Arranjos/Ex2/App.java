@@ -62,6 +62,8 @@ public class App {
                     } catch(Exception ex) {
                         System.out.println(ex.getMessage());
                     }
+                    op = 0;
+                    break;
 
                 case 4:
                     try {
