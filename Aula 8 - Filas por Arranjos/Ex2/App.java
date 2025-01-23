@@ -62,8 +62,7 @@ public class App {
                     } catch(Exception ex) {
                         System.out.println(ex.getMessage());
                     }
-                    op = 0;
-                    break;
+
                 case 4:
                     try {
                         System.out.println("Id: ");
@@ -73,29 +72,31 @@ public class App {
 
                         int resultado = queue.search(id);
 
-                        if(resultado == -1)
-                            System.out.println("Não foi encontrado um processo com id" + id + ".");
-                        else
-                            System.out.println("O processo " + id + "está na posição " + resultado + " na fila de processos.");
+                        if (resultado == -1)
+                            System.out.println("Processo não encontrado.");
+                        else 
+                            System.out.println("Processo na posição " + resultado);
                     } catch(Exception ex) {
                         System.out.println(ex.getMessage());
                     }
                     op = 0;
                     break;
                 case 5:
-                    try {
-                        queue.clear();
-                        System.out.println("Fila limpa com sucesso!");
-                    } catch(Exception ex) {
-                        System.out.println(ex.getMessage());
-                    }
+                    queue.clear();
+                    System.out.println("Limpo!");
+                    op = 0;
+                    break;
                 case 6:
                     System.out.println("Saindo...");
                     System.exit(0);
+                    break;
                 default:
                     System.out.println("Digite uma opção válida, por favor.");
                     op = 0;
+                    break;
             }
         }
+
+        sc.close();
     }
 }
