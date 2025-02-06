@@ -3,6 +3,7 @@ public class Back {
     private int size = 0;
     private float divida = 0;
     private int numParcelas = 0;
+    private float total = 0;
 
     public void add(int parcelas, float montante) {
         for(int i = 0; i < parcelas; ++i) {
@@ -21,6 +22,7 @@ public class Back {
 
             size++;
             divida = montante;
+            total = montante;
             numParcelas = parcelas;
         }
     }
@@ -36,7 +38,7 @@ public class Back {
 
             size--;
 
-            divida -= divida / numParcelas;
+            divida -= total / numParcelas;
 
             return tmp;
         }
@@ -53,7 +55,7 @@ public class Back {
 
             size--;
 
-            divida -= divida / numParcelas;
+            divida -= total / numParcelas;
 
             return tmp;
         }

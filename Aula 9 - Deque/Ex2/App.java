@@ -66,7 +66,7 @@ public class App {
                         else {
                             System.out.println("Você tem uma dívida de R$" + back.getDivida());
                             if(back.getSize() == 1) {
-                                System.out.println("Deseja pagar sua próxima parcela?");
+                                System.out.println("Deseja pagar sua última parcela?");
                                 try {
                                     Parcela tmp = back.getFirst();
                                     System.out.println("Valor da parcela: R$" + (tmp.valor * tmp.juros));
