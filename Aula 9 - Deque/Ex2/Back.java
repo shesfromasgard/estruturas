@@ -19,12 +19,11 @@ public class Back {
                 control.anterior.proximo = tmp;
                 control.anterior = tmp;
             }
-
             size++;
-            divida = montante;
-            total = montante;
-            numParcelas = parcelas;
         }
+        divida = montante;
+        total = montante;
+        numParcelas = parcelas;
     }
 
     public Parcela removeFirst() throws Exception {
