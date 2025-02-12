@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Back {
+    //Encadeamento
     public static final int M = 17;
     private ArrayList<Time>[] table;
 
