@@ -1,4 +1,5 @@
 public class HashTable {
+    //Endereçamento aberto
     public static final int M = 13;
     private Livro[] tabela;
     public HashTable(){
