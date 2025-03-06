@@ -24,6 +24,9 @@ public class App {
     
                 System.out.println(back.isMax(y));
             }
+
+            back.clear();
+            
             n = sc.nextInt();
         }
 
