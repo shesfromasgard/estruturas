@@ -33,4 +33,8 @@ public class Back {
             return "Correto";
         return "Incorreto";
     }
+
+    public void clear() {
+        root = null;
+    }
 }
