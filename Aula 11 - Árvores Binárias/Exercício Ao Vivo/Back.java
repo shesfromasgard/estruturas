@@ -28,9 +28,9 @@ public class Back {
             return max(no.right, year);
     }
 
-    public boolean isMax(int year) {
+    public String isMax(int year) {
         if(max(root, year).year == year)
-            return true;
-        return false;
+            return "Correto";
+        return "Incorreto";
     }
 }
