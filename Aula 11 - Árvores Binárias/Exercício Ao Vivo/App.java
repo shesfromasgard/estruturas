@@ -14,7 +14,6 @@ public class App {
                 System.exit(0);
         
             for(int i = 0; i < n; ++i) {
-                System.out.println(i + ".");
                 int y = sc.nextInt();
     
                 float t = sc.nextFloat();
@@ -24,7 +23,6 @@ public class App {
             int m = sc.nextInt();
     
             for(int i = 0; i < m; ++i){
-                System.out.println(i + "#");
                 int y = sc.nextInt();
     
                 System.out.println(back.isMax(y));
